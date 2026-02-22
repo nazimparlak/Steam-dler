@@ -830,7 +830,6 @@ export default function App() {
                   </div>
                   <div className="profile-info">
                     <div className="profile-name">{state.displayName || state.username}</div>
-                    {state.steamId && <div className="profile-id">{state.steamId}</div>}
                     <div style={{ marginTop: 4 }}>
                       <span className="badge badge-success">● Çevrimiçi</span>
                     </div>
