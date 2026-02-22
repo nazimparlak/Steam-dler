@@ -1,0 +1,16 @@
+node_modules/
+dist/
+.env
+
+# Steam Idler Private Files
+.steam_tokens.json
+.idle_history.json
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS Files
+.DS_Store
+Thumbs.db
