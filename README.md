@@ -4,7 +4,9 @@ Steam hesabınızda oyun hilesi olmadan, tamamen güvenli bir şekilde dilediği
 
 Modern arayüzü, kullanım kolaylığı ve Steam mobil uygulaması üzerinden **QR Kod** ile şifresiz/güvenli giriş yapma özelliği ile öne çıkar. Açık kaynak kodlu olduğu için Steam hesabınız tamamen güvendedir.
 
-![Steam Idler Screenshot](https://raw.githubusercontent.com/nazimparlak/steam-idler/main/screenshot.png) *(Buraya projene ait bir ekran görüntüsü yükleyebilirsin)*
+![Steam Idler Screenshot 1](https://raw.githubusercontent.com/nazimparlak/Steam-dler/main/public/image1.png)
+
+![Steam Idler Screenshot 2](https://raw.githubusercontent.com/nazimparlak/Steam-dler/main/public/image2.png)
 
 ---
 
