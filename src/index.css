@@ -45,8 +45,8 @@ body {
   font-family: 'Inter', -apple-system, sans-serif;
   background: var(--bg-deep);
   color: var(--text-primary);
-  min-height: 100vh;
-  overflow-x: hidden;
+  height: 100vh;
+  overflow: hidden;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -92,7 +92,7 @@ body::before {
 .app-layout {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  height: 100vh;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 24px;
@@ -257,19 +257,47 @@ body::before {
   grid-template-columns: 380px 1fr;
   gap: 24px;
   flex: 1;
-  padding-bottom: 40px;
+  overflow: hidden;
+  min-height: 0;
 }
 
 .left-col {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  overflow-y: auto;
+  padding-bottom: 24px;
+  padding-right: 4px;
 }
 
 .right-col {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  overflow-y: auto;
+  padding-bottom: 24px;
+  padding-right: 4px;
+}
+
+.left-col::-webkit-scrollbar,
+.right-col::-webkit-scrollbar {
+  width: 4px;
+}
+
+.left-col::-webkit-scrollbar-track,
+.right-col::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.left-col::-webkit-scrollbar-thumb,
+.right-col::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 4px;
+}
+
+.left-col::-webkit-scrollbar-thumb:hover,
+.right-col::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
 }
 
 /* ─── Form ─── */
@@ -1020,8 +1048,27 @@ body::before {
 
 /* Responsive */
 @media (max-width: 900px) {
+  body {
+    overflow-y: auto;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .app-layout {
+    height: auto;
+    min-height: 100vh;
+  }
+
   .main-grid {
     grid-template-columns: 1fr;
+    overflow: visible;
+  }
+
+  .left-col,
+  .right-col {
+    overflow-y: visible;
+    padding-bottom: 0;
+    padding-right: 0;
   }
 
   .idle-stats {
